@@ -1,0 +1,51 @@
+{
+  "name": "",
+  "version": "",
+  "description": "",
+  "scripts": {
+    "start": "electron .",
+    "rebuild": "electron-rebuild -f -w yourmodule",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "packager": "electron-packager ./   --win --out jiacerpack  --overwrite --ignore=node_modules"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "postinstall": "electron-builder install-app-deps",
+  "asar ": true,
+  "smartUnpack": true,
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "jiacer"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "~1.4.1",
+    "electron-builder": "^19.37.2",
+    "electron-rebuild": "^1.6.0",
+    "electron-windows-installer": "^1.7.8"
+  },
+  "directories":{
+    "buildResources":"build",
+    "files": ["*.ico"]
+  },
+  "build": {
+    "appId": "http://ysc-b.jiacer.com",
+    "productName": "家策门店助手预生产版",
+    "win": {
+      "target": "nsis",
+      "extraResources": "./app/card/**.*",
+      "icon": "jiacer.ico",
+      "publish": [
+        {
+          "provider": "generic",
+          "url": "http://ysc-b.jiacer.com"
+        }
+      ]
+    }
+  },
+  "files": ["*.ico"]
+}

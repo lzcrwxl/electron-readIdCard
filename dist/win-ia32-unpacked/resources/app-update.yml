@@ -1,2 +1,3 @@
-provider: generic
-url: 'http://ysc-b.jiacer.com'
+owner: electron
+repo: electron-quick-start
+provider: github

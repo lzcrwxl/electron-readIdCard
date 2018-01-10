@@ -1,6 +1,7 @@
-version: 1.0.0
-releaseDate: '2017-10-28T06:38:34.507Z'
-path: 家策门店助手预生产版 Setup 1.0.0.exe
+version: 1.0.1
+releaseDate: '2017-12-06T04:01:28.839Z'
+path: 家策门店助手测试版 Setup 1.0.1.exe
 sha512: >-
-  jsrlVHTWyJcrNW6a2VLsDEcKIVw/oVgCXdgwQgRBW7OniyIIIdon2QjcTtmmhi9nDonF9g7CoQnOgXthkrkGEQ==
-sha2: 53a588261eac676b0748f79c56288cdea8f3522667e0dde18397d07d527e7aae
+  gLY3jTW/mgSLOU8s0owCuX5tgiB57/f+8SnMBoJvfDhd4sdTgWkMIaoegMht19wU//mfFpYxMeI0mbtJ6MZN3Q==
+sha2: 92be84dc11a9f920dc499c5b5f4e668c8f0ee7c534e57e0e0286ce13a8f81097
+githubArtifactName: csjiacer-setup-1.0.1.exe

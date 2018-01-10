@@ -129,18 +129,20 @@ var appendInfo = data256.slice(start, end);
 
 
 
-results = {
-  name: iconv.decode(name, 'UTF-16').trim(),
-  sexCode: iconv.decode(sexCode, 'UTF-16').trim(),
-  ethnicCode: iconv.decode(ethnicCode, 'UTF-16').trim(),
-  birthDate: iconv.decode(birthDate, 'UTF-16').trim(),
-  address: iconv.decode(address, 'UTF-16').trim(),
-  idNumber: iconv.decode(idNumber, 'UTF-16').trim(),
-  issuer: iconv.decode(issuer, 'UTF-16').trim(),
-  effectDate: iconv.decode(effectDate, 'UTF-16').trim(),
-  expiryDate: iconv.decode(expiryDate, 'UTF-16').trim(),
-  appendInfo: iconv.decode(appendInfo, 'UTF-16').trim()
-};
+//iconv.decode(issuer, 'UTF-16').trim()
+  results = {
+    name: name.toString('utf16le').trim(),
+    sexCode: sexCode.toString('utf16le').trim(),
+    ethnicCode: ethnicCode.toString('utf16le').trim(),
+    birthDate: birthDate.toString('utf16le').trim(),
+    address: address.toString('utf16le').trim(),
+    idNumber: idNumber.toString('utf16le').trim(),
+    issuer: issuer.toString('utf16le').trim(),
+    effectDate: effectDate.toString('utf16le').trim(),
+    expiryDate: expiryDate.toString('utf16le').trim(),
+    appendInfo: appendInfo.toString('utf16le').trim()
+  };
+
 //TODO   name: iconv.decode(ref.reinterpretUntilZeros(Buffer.from(personInfo.name), 1), 'GBK'),
 //TODO   name = name.substring(0,name.indexOf('\u0000'))
 

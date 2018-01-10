@@ -1,7 +1,7 @@
 {
-  "name": "yscjiacer",
-  "description": "家策好服务",
-  "version": "1.0.0",
+  "name": "csjiacer",
+  "description": "上海家策教育科技有限公司",
+  "version": "1.0.1",
   "author": "上海家策教育科技有限公司",
   "main": "main.js",
   "scripts": {
